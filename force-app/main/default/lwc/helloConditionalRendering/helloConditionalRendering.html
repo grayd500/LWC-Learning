@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title ="Conditional rendering">
+        <div class="slds-var-m-around_medium">
+            <lightning-button 
+                variant="brand" 
+                label="Show Data" 
+                title="Show Data" 
+                onclick={handleClick} 
+                class="slds-m-left_x-small">
+            </lightning-button>
+
+            <template if:true={isVisible}>
+                <div>Welcome to SFDX Hell!</div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>
