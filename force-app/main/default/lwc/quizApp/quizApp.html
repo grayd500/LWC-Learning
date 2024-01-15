@@ -4,6 +4,17 @@
             <template for:each={myQuestions} for:item="quiz">
                 <div key={quiz.id}>
                     <div><strong>{quiz.id} - {quiz.question}</strong></div>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            {quiz.answers.a}
+                        </div>
+                        <div class="slds-col">
+                            {quiz.answers.b}
+                        </div>
+                        <div class="slds-col">
+                            {quiz.answers.c}
+                        </div>
+                    </div>
                 </div>
             </template>
         </div>
