@@ -12,7 +12,10 @@
             <template if:true={isVisible}>
                 <div>Welcome to SFDX Hell!</div>
             </template>
-
+            <template if:false={isVisible}>
+                <div>If you can see the data, click the button.</div>
+            </template>
+            
         </div>
     </lightning-card>
 </template>
