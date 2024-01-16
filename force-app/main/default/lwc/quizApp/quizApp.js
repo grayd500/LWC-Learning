@@ -36,6 +36,9 @@ export default class QuizApp extends LightningElement {
         }
     ]
 
+    get allNotSelected() {
+        return !(Object.keys(this.selected).length === this.myQuestions.length)
+    }
     changeHandler(event){
         console.log("name", event.target.name)
         console.log("value", event.target.value)
@@ -48,6 +51,6 @@ export default class QuizApp extends LightningElement {
 
     }
     resetHandler(){
-        
+
     }
 }
