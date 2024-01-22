@@ -1,8 +1,12 @@
+<!-- force-app\main\default\lwc\p2cParentComponent\p2cParentComponent.html: -->
 <template>
    <c-p2c-alert-component
       message="Hurray !! I got the data"
       card-heading="Parent to Child primitive data communication"
       number=20 
-      is-valid=false
+      is-valid
       ></c-p2c-alert-component>
+
+      <div class="slds-var-m-bottom_medium"></div>
+      <c-p2c-carousel-component carousel-details={carouselData}></c-p2c-carousel-component>
 </template>
