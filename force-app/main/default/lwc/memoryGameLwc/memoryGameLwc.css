@@ -1,3 +1,4 @@
+/* force-app\main\default\lwc\memoryGameLwc\memoryGameLwc.css: */
 .container{
     display: flex;
     justify-content: center;
@@ -45,36 +46,37 @@
 .grid-container .card.open{
     transform: rotateY(0);
     background: #02b3e4;
-    cursor: default;
-    animation-name: flipInY;
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visibile !important;
-    animation-duration: .75s;
-    }
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
 .grid-container .card.show{
     font-size: 33px;
     visibility: visible !important;
-    opacity: 100 !important;
+	opacity: 100 !important;
 }
 .grid-container .card.disabled{
     pointer-events: none;
     opacity: 0.9;
 }
+
 .grid-container .card.match{
     cursor: default;
-    background: #E5F720;
-    font-size: 33px;
-    animation-name: rubberBand;
-    -webkit-backface-visibilityh: visible !important;
-    backface-visibility: visible !important;
-    animation-duration: .75s;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
 }
 .grid-container .card.unmatched{
     animation-name: pulse;
-    -webkit-backface-visibilityh: visible !important;
-    backface-visibility: visible !important;
-    animation-duration: .75s;
-    background: #e2043b;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
 }
 /*animations*/
 @keyframes flipInY {

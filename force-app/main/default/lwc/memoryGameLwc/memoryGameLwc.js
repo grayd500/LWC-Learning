@@ -1,3 +1,4 @@
+// force-app\main\default\lwc\memoryGameLwc\memoryGameLwc.js:
 import { LightningElement } from 'lwc';
 import { loadStyle } from 'lightning/platformResourceLoader';
 import fontawesome from '@salesforce/resourceUrl/fontawesome';
@@ -47,7 +48,7 @@ export default class MemoryGameLwc extends LightningElement {
             this.openedCards[1].classList.add("match", "disabled")
             this.openedCards[0].classList.remove("show", "open")
             this.openedCards[1].classList.remove("show", "open")
-            this.openCards=[]
+            this.openedCards=[]
         }
         unmatched(){
             this.openedCards[0].classList.add("unmatched")
@@ -57,7 +58,7 @@ export default class MemoryGameLwc extends LightningElement {
                 this.openedCards[0].classList.remove("show", "open", "unmatched")
                 this.openedCards[1].classList.remove("show", "open", "unmatched")
                 this.action('ENABLE')
-                this.openCards=[]
+                this.openedCards=[]
             }, 1100)
         }
     
