@@ -3,7 +3,7 @@ import {ShowToastEvent} from 'lightning/platformShowToastEvent'
 export default class Notifications extends LightningElement {
 
     toastHandler(){
-            this.showToast("Success!!", "Account Created!!", "success")
+            this.showToast("Success!!", "{0} Account Created!! {1}", "success")
     }
     toastHandlerTwo(){
         this.showToast("Error!!", "Account Creation Failed!!", "error")
@@ -20,6 +20,13 @@ export default class Notifications extends LightningElement {
             title,
             message,
             variant,
+            messageData:[
+                'Salesforce', {
+                    url: 'http://www.salesforce.com/',
+                    label: 'Click Here'
+                }
+            ],
+            mode:'sticky'
         })
         this.dispatchEvent(event)
     }
