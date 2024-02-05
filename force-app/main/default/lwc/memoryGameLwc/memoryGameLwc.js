@@ -23,6 +23,15 @@ export default class MemoryGameLwc extends LightningElement {
         {id:16, listClass:"card", type:'cube',  icon:'fa fa-cube'},
     ]
 
+    displayCard(event){
+        let currCard =event.target
+        currCard.classList.add("open", "show", "disabled")
+    }
+    
+    
+    
+    
+    
     renderedCallback() {
         if (this.isLibLoaded) {
             return;
