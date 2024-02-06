@@ -12,22 +12,22 @@ export default class MemoryGameLwc extends LightningElement {
     timerRef
     showCongratulations = false
     cards=[
-        {id:2, listClass:"card", type:'diamond', icon:'fa fa-diamond'},
-        {id:1, listClass:"card", type:'plane', icon:'fa fa-paper-plane-o'},
-        {id:3, listClass:"card", type:'anchor', icon:'fa fa-anchor'},
-        {id:4, listClass:"card", type:'bolt', icon:'fa fa-bolt'},
-        {id:5, listClass:"card", type:'cube', icon:'fa fa-cube'},
-        {id:6, listClass:"card", type:'anchor', icon:'fa fa-anchor'},
-        {id:7, listClass:"card", type:'leaf', icon:'fa fa-leaf'},
-        {id:8, listClass:"card", type:'bicycle', icon:'fa fa-bicycle'},
-        {id:9, listClass:"card", type:'diamond', icon:'fa fa-diamond'},
-        {id:10, listClass:"card", type:'bomb', icon:'fa fa-bomb'},
-        {id:11, listClass:"card", type:'leaf', icon:'fa fa-leaf'},
-        {id:12, listClass:"card", type:'bomb', icon:'fa fa-bomb'},
-        {id:13, listClass:"card", type:'bolt', icon:'fa fa-bolt'},
-        {id:14, listClass:"card", type:'bicycle', icon:'fa fa-bicycle'},
-        {id:15, listClass:"card", type:'plane', icon:'fa fa-paper-plane-o'},
-        {id:16, listClass:"card", type:'cube', icon:'fa fa-cube'},
+        {id:2, listClass:"card", type:'github', icon:'fa fa-github'},
+        {id:1, listClass:"card", type:'linkedin', icon:'fa fa-linkedin-square'},
+        {id:3, listClass:"card", type:'android', icon:'fa fa-android'},
+        {id:4, listClass:"card", type:'apple', icon:'fa fa-apple'},
+        {id:5, listClass:"card", type:'chrome', icon:'fa fa-chrome'},
+        {id:6, listClass:"card", type:'android', icon:'fa fa-android'},
+        {id:7, listClass:"card", type:'linux', icon:'fa fa-linux'},
+        {id:8, listClass:"card", type:'slack', icon:'fa fa-slack'},
+        {id:9, listClass:"card", type:'github', icon:'fa fa-github'},
+        {id:10, listClass:"card", type:'windows', icon:'fa fa-windows'},
+        {id:11, listClass:"card", type:'linux', icon:'fa fa-linux'},
+        {id:12, listClass:"card", type:'windows', icon:'fa fa-windows'},
+        {id:13, listClass:"card", type:'apple', icon:'fa fa-apple'},
+        {id:14, listClass:"card", type:'slack', icon:'fa fa-slack'},
+        {id:15, listClass:"card", type:'linkedin', icon:'fa fa-linkedin-square'},
+        {id:16, listClass:"card", type:'chrome', icon:'fa fa-chrome'},
     ]
     get gameRating(){
         let stars = this.moves<12 ? [1,2,3]:this.moves>13 ? [1,2]:[1]
