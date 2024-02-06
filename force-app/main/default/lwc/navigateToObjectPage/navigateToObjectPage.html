@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Navigate to New Record">
+        <lightning-button variant="brand" label="New Record"
+        onclick={navigateToNewRecord}></lightning-button>
+    </lightning-card>
+    <lightning-card title="Navigate to New Account Record">
+        <lightning-button variant="brand" label="New Account Record"
+        onclick={navigateToNewAccountRecord}></lightning-button>
+        <lightning-button variant="brand" label="New Lead Record"
+        onclick={navigateToNewLeadRecord}></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Navigate to New Record with default values">
+        <lightning-button variant="brand" label="New Record with default values"
+        onclick={navigateToNewRecordWithDefault}></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Navigate to List View">
+        <lightning-button variant="brand" label="Navigate to List View"
+        onclick={navigateToListView}></lightning-button>
+    </lightning-card>
+</template>
